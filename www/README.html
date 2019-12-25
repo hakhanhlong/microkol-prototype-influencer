@@ -8,9 +8,10 @@
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  
   <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> v4.7--> 
-  <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css"> <!--v 5.12 -->
+  <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css"> <!--v 5.12 -->
   
   <link rel="stylesheet" type="text/css" href="css/theme.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300'rel='stylesheet' type='text/css'>
   
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -22,16 +23,84 @@
 </head>
 <body>
     
-	<header>
-  <nav class="navbar sticky-top flex-md-nowrap p-0">
-    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a>  
-    <ul class="navbar-nav px-3">
-      <li class="nav-item text-nowrap">
-        <a class="nav-link" href="#">Sign out</a>
-      </li>
-    </ul>
+	<header class="shadow-sm">
+  <nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <a class="navbar-brand pt-2" href="#"><h4>MicroKols <small>Influencer</small></h4></a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link menu-link" href="#">Giới thiệu <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-link" href="#">Chính sách & Quy định</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-link" href="#">Hỏi & Đáp</a>
+        </li>
+      </ul>
+      <ul class="list-inline my-2 my-md-0 mr-md-3">
+        <li class="list-inline-item">
+          <a class="nav-link menu-link notification" href="#">
+            <i class="fas fa-bell mr-1"></i><span class="badge badge-danger">6</span>
+          </a>  
+        </li>
+        <li class="list-inline-item">
+          <div class="nav-link btn-group">                
+            <div class="dropdown-toggle" data-toggle="dropdown">
+              <img src="img/avatar.png" width="32" height="32" class="rounded-circle"/>
+              <span class="text-blue500">Hà Khánh Long</span>
+            </div>        
+            <div class="dropdown-menu dropdown-menu-right mr-2">
+              <a class="dropdown-item mt-2" href="#"><i class="fas fa-cog"></i> Cấu hình</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Thoát</a>          
+            </div>
+          </div>  
+        </li>
+        
+      
+      </ul>
+
+     
+
+    </div>
   </nav>
 </header>
+<div class="nav-scroller bg-white shadow-sm header-menu-container">
+  <div class="container">
+    <ul class="nav nav-pills header-menu">
+      <li class="nav-item">
+        <a class="nav-link active" href="#"><i class="fas fa-home"></i> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-bell"></i> Thông báo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-user"></i> Tài khoản</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-star"></i> MarketPlace</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fab fa-facebook"></i> Facebook Feed</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-user-friends"></i> Bạn bè trên Facebook</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-cogs"></i> Cấu hình</a>
+      </li>     
+    </ul>
+  </div>
+ 
+</div>
+
+
+
 
 
 	<h1>booterator</h1><p>Front end boilerplate using Harp.js, Bootstrap &amp; Less</p>
