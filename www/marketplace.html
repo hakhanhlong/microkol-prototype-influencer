@@ -1,0 +1,387 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MarketPlace | Booterator</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  
+  <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> v4.7--> 
+  <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css"> <!--v 5.12 -->
+  
+  <link rel="stylesheet" type="text/css" href="css/theme.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300'rel='stylesheet' type='text/css'>
+  
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+    
+	<header class="shadow-sm">
+  <nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <a class="navbar-brand pt-2" href="#"><h4>MicroKols <small>Influencer</small></h4></a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link menu-link" href="#">Giới thiệu <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-link" href="#">Chính sách & Quy định</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-link" href="#">Hỏi & Đáp</a>
+        </li>
+      </ul>
+      <ul class="list-inline my-2 my-md-0 mr-md-3">
+        <li class="list-inline-item">
+          <a class="nav-link menu-link notification" href="#">
+            <i class="fas fa-bell mr-1"></i><span class="badge badge-danger">6</span>
+          </a>  
+        </li>
+        <li class="list-inline-item">
+          <div class="nav-link btn-group">                
+            <div class="dropdown-toggle" data-toggle="dropdown">
+              <img src="img/avatar.png" width="32" height="32" class="rounded-circle"/>
+              <span class="text-blue500">Hà Khánh Long</span>
+            </div>        
+            <div class="dropdown-menu dropdown-menu-right mr-2">
+              <a class="dropdown-item mt-2" href="#"><i class="fas fa-cog"></i> Cấu hình</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-key"></i> Thay đổi mật khẩu</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Thoát</a>          
+            </div>
+          </div>  
+        </li>
+        
+      
+      </ul>     
+    </div>
+  </nav>
+</header>
+<div class="nav-scroller bg-white shadow-sm header-menu-container">
+  <div class="container-fluid">
+    <ul class="nav nav-pills header-menu">
+      <li class="nav-item">
+        <a class="nav-link active" href="#"><i class="fas fa-home"></i> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-bell"></i> Thông báo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-user"></i> Tài khoản</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-star"></i> MarketPlace</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fab fa-facebook"></i> Facebook Feed</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-user-friends"></i> Bạn bè trên Facebook</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-cogs"></i> Cấu hình</a>
+      </li>     
+    </ul>
+
+   
+
+  </div>
+ 
+</div>
+
+
+
+
+
+
+	<nav class="shadow-sm">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item" aria-current="page"><a class="breadcrumb-link" href="#">Dashboard</a></li>
+    <li class="breadcrumb-item active" aria-current="page">MarketPlace</li>
+  </ol>
+</nav>
+<div class="container-fluid mt-4">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mb-3 shadow border-0">
+        <div class="card-body">                        
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <form>
+                        <div class="form-group mb-2">
+                            <div class="form-row">
+                                <div class="col-md-3">
+                                    <select class="custom-select custom-select-lg">
+                                            <option value="">Tất cả loại</option>
+                                            <option value="ShareContent">Chia sẻ thông điệp, không cần viết caption</option>
+                                            <option value="ShareContentWithCaption">Chia sẻ thông điệp, viết thêm caption</option>
+                                            <option value="ChangeAvatar">Thay hình Avatar</option>
+                                            <option value="PostComment">Viết comment seeding cho chiến dịch</option>
+                                            <option value="JoinEvent">Đăng ký tham dự sự kiện</option>
+                                            <option value="ShareStreamUrl">Share link livestream chương trình</option>
+                                            <option value="CustomService">Yêu cầu khác</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-8">
+                                        <input type="text" class="form-control form-control-lg" placeholder="Tìm kiếm chiến dịch">
+                                </div>
+                                <div class="col-md-1">
+                                        <button type="submit" class="shadow btn btn-warning btn-lg">Tìm kiếm</button>
+                                </div>
+                            </div>
+                            
+                        </div>                                                                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-12">
+      <ul class="nav nav-tabs nav-campaign" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link shadow active" id="all-tab" data-toggle="tab" href="#all" role="tab">Tất cả <span class="badge badge-danger">16</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="waitjoin-tab" data-toggle="tab" href="#waitjoin" role="tab">Chờ tham gia <span class="badge badge-danger">26</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="running-tab" data-toggle="tab" href="#running" role="tab">Đang Bắt đầu <span class="badge badge-danger">36</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="complete-tab" data-toggle="tab" href="#complete" role="tab">Hoàn thành <span class="badge badge-danger">6</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="notsuitable-tab" data-toggle="tab" href="#notsuitable" role="tab">Không hợp lệ <span class="badge badge-danger">86</span></a>
+        </li>
+      </ul>     
+      <div class="tab-content mt-4" id="myTabContent">
+        <div class="tab-pane fade show active" id="all" role="tabpanel">
+          <!--#######################begin#################################-->
+          <div class="row row-cols-1 row-cols-md-4">
+            <div class="col mb-4">
+              <div class="card shadow bg-white rounded">
+                <img src="img/1.jpg" width="334" height="209" class="card-img-top" alt="...">
+                <div class="card-body">                  
+                  <a href="#" class="campaign-link">
+                    <h5 class="card-title">Cuộc thi "Càng Đông Càng Vui" - The More, The Merrier !!!</h5>
+                  </a>
+                  <p>Chia sẻ thông điệp, không cần viết caption</p>                  
+                  <div class="d-flex">
+                    <div><small>by</small><span class="ml-2">Tp Bank</span></div>                    
+                    <div class="ml-auto text-right"><small class="ml-5">Kết thúc: 25/12/2019 14:00:00</small></div>                    
+                  </div>
+                  <hr>
+                  <div class="d-flex">
+                    <div class="campaign-facebook"><h1><i class="fab fa-facebook"></i></h1></div>
+                    <div>
+                      <ul class="list-unstyled">
+                        <li class="ml-2">Running</li>
+                        <li class="ml-2"><small>20/90 tham gia</small></li>
+                      </ul>
+                    </div>
+                    <div class="ml-auto text-right">
+                      <button class="btn btn-outline-primary">Applied</button>
+                    </div>                                                          
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card shadow bg-white rounded">
+                <img src="img/2.jpg" width="334" height="209" class="card-img-top" alt="...">
+                <div class="card-body">                  
+                  <a href="#" class="campaign-link">
+                    <h5 class="card-title">Cuộc thi "Càng Đông Càng Vui" - The More, The Merrier !!!</h5>
+                  </a>
+                  <p>Chia sẻ thông điệp, viết thêm caption</p>
+                  <div class="d-flex">
+                    <div><small>by</small><span class="ml-2">Tp Bank</span></div>                    
+                    <div class="ml-auto text-right"><small class="ml-5">Hoàn thành</small></div>                    
+                  </div>
+                  <hr>
+                  <div class="d-flex">
+                    <div class="campaign-facebook"><h1><i class="fab fa-facebook"></i></h1></div>
+                    <div>
+                      <ul class="list-unstyled">
+                        <li class="ml-2">Closed</li>
+                        <li class="ml-2"><small>20/90 tham gia</small></li>
+                      </ul>
+                    </div>                                                          
+                  </div>                  
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card shadow bg-white rounded">
+                <img src="img/3.jpg" width="334" height="209" class="card-img-top" alt="...">
+                <div class="card-body">                  
+                  <a href="#" class="campaign-link">
+                    <h5 class="card-title">Cuộc thi "Càng Đông Càng Vui" - The More, The Merrier !!!</h5>
+                  </a>
+                  <p>Chia sẻ thông điệp, viết thêm caption</p>
+                  <div class="d-flex">
+                    <div><small>by</small><span class="ml-2">Tp Bank</span></div>                    
+                    <div class="ml-auto text-right"><small class="ml-5">Chờ tham gia</small></div>                    
+                  </div>
+                  <hr>
+                  <div class="d-flex">
+                    <div class="campaign-facebook"><h1><i class="fab fa-facebook"></i></h1></div>
+                    <div>
+                      <ul class="list-unstyled">
+                        <li class="ml-2">Open</li>
+                        <li class="ml-2"><small>20/90 tham gia</small></li>
+                      </ul>
+                    </div>                    
+                    <div class="ml-auto text-right">
+                      <button class="btn btn-outline-primary">Apply</button>
+                    </div>                    
+                  </div>                  
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card shadow bg-white rounded">
+                <img src="img/4.jpg" width="334" height="209" class="card-img-top" alt="...">
+                <div class="card-body">                  
+                  <a href="#" class="campaign-link">
+                    <h5 class="card-title">Cuộc thi "Càng Đông Càng Vui" - The More, The Merrier !!!</h5>
+                  </a>
+                  <p>Chia sẻ thông điệp, viết thêm caption</p>
+                  <div class="d-flex">
+                    <div><small>by</small><span class="ml-2">Tp Bank</span></div>                    
+                    <div class="ml-auto text-right"><small class="ml-5">Không hợp lệ</small></div>                    
+                  </div>
+                  <hr>
+                  <div class="d-flex">
+                    <div class="campaign-facebook"><h1><i class="fab fa-facebook"></i></h1></div>
+                    <div>
+                      <ul class="list-unstyled">
+                        <li class="ml-2">Closed</li>
+                        <li class="ml-2"><small>20/90 tham gia</small></li>
+                      </ul>
+                    </div>                                                          
+                  </div>                   
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card shadow bg-white rounded">
+                <img src="img/5.jpg" width="334" height="209" class="card-img-top" alt="...">
+                <div class="card-body">                  
+                  <a href="#" class="campaign-link">
+                    <h5 class="card-title">Cuộc thi "Càng Đông Càng Vui" - The More, The Merrier !!!</h5>
+                  </a>
+                  <p>Chia sẻ thông điệp, viết thêm caption</p>
+                  <div class="d-flex">
+                    <div><small>by</small><span class="ml-2">Tp Bank</span></div>                    
+                    <div class="ml-auto text-right"><small class="ml-5">Không hợp lệ</small></div>                    
+                  </div>
+                  <hr>
+                  <div class="d-flex">
+                    <div class="campaign-facebook"><h1><i class="fab fa-facebook"></i></h1></div>
+                    <div>
+                      <ul class="list-unstyled">
+                        <li class="ml-2">Closed</li>
+                        <li class="ml-2"><small>20/90 tham gia</small></li>
+                      </ul>
+                    </div>                                                          
+                  </div>                   
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card shadow bg-white rounded">
+                <img src="img/6.jpg" width="334" height="209" class="card-img-top" alt="...">
+                <div class="card-body">                  
+                  <a href="#" class="campaign-link">
+                    <h5 class="card-title">Cuộc thi "Càng Đông Càng Vui" - The More, The Merrier !!!</h5>
+                  </a>
+                  <p>Chia sẻ thông điệp, viết thêm caption</p>
+                  <div class="d-flex">
+                    <div><small>by</small><span class="ml-2">Tp Bank</span></div>                    
+                    <div class="ml-auto text-right"><small class="ml-5">Không hợp lệ</small></div>                    
+                  </div>
+                  <hr>
+                  <div class="d-flex">
+                    <div class="campaign-facebook"><h1><i class="fab fa-facebook"></i></h1></div>
+                    <div>
+                      <ul class="list-unstyled">
+                        <li class="ml-2">Closed</li>
+                        <li class="ml-2"><small>20/90 tham gia</small></li>
+                      </ul>
+                    </div>                                                          
+                  </div>                   
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card shadow bg-white rounded">
+                <img src="img/7.jpg" width="334" height="209" class="card-img-top" alt="...">
+                <div class="card-body">                  
+                  <a href="#" class="campaign-link">
+                    <h5 class="card-title">Cuộc thi "Càng Đông Càng Vui" - The More, The Merrier !!!</h5>
+                  </a>
+                  <p>Chia sẻ thông điệp, viết thêm caption</p>
+                  <div class="d-flex">
+                    <div><small>by</small><span class="ml-2">Tp Bank</span></div>                    
+                    <div class="ml-auto text-right"><small class="ml-5">Không hợp lệ</small></div>                    
+                  </div>
+                  <hr>
+                  <div class="d-flex">
+                    <div class="campaign-facebook"><h1><i class="fab fa-facebook"></i></h1></div>
+                    <div>
+                      <ul class="list-unstyled">
+                        <li class="ml-2">Closed</li>
+                        <li class="ml-2"><small>20/90 tham gia</small></li>
+                      </ul>
+                    </div>                                                          
+                  </div>                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--#######################end###################################-->
+        </div>
+        <div class="tab-pane fade" id="waitjoin" role="tabpanel">2</div>
+        <div class="tab-pane fade" id="running" role="tabpanel">3</div>
+        <div class="tab-pane fade" id="complete" role="tabpanel">4</div>
+        <div class="tab-pane fade" id="notsuitable" role="tabpanel">5</div>
+      </div>
+      <div class="text-right">
+        <small style="color: red"><i>Cứ kéo xuống thì hiển thị thêm nhé em</i> </small>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+	
+
+	<!-- javascript //-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script>
+    $(document).ready(function () {
+      // initalize tooltips
+      $('[data-toggle="tooltip"]').tooltip();
+      // initalize popovers
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
+
+</body>
+</html>

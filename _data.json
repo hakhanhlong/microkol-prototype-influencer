@@ -2,5 +2,13 @@
 	"index": {
 		"pageTitle": "Home",
 		"layout": "_layout"
+	},
+	"marketplace": {
+		"pageTitle": "MarketPlace",
+		"layout": "_layout"
+	},
+	"campaign-detail": {
+		"pageTitle": "Campaign Detail",
+		"layout": "_layout"
 	}
 }
