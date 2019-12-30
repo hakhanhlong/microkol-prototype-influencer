@@ -10,5 +10,13 @@
 	"campaign-detail": {
 		"pageTitle": "Campaign Detail",
 		"layout": "_layout"
+	},
+	"notification":{
+		"pageTitle": "Notification",
+		"layout": "_layout"
+	},
+	"influencer-settings":{
+		"pageTitle": "Settings",
+		"layout": "_layout"
 	}
 }

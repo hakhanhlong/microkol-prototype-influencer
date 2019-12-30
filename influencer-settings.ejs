@@ -1,0 +1,69 @@
+<nav class="shadow-sm">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item" aria-current="page"><a class="breadcrumb-link" href="/">Dashboard</a></li>
+      <li class="breadcrumb-item" aria-current="page">Settings</li>      
+    </ol>
+</nav>
+<div class="alert alert-warning" role="alert">
+  <i class="fas fa-info-circle"></i> Bạn đã thay đổi thông tin cá nhân thành công
+</div>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+
+          <ul class="nav nav-tabs nav-campaign">
+            <li class="nav-item">
+              <a class="nav-link active" id="influencer-info-tab" data-toggle="tab" href="#influencer-info" role="tab">Thông tin cá nhân</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="campaign-statistic-tab" data-toggle="tab" href="#campaign-statistic" role="tab">Thông tin liên lạc</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="campaign-caption-tab" data-toggle="tab" href="#campaign-caption" role="tab">Xác minh tài khoản</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="campaign-content-tab" data-toggle="tab" href="#campaign-content" role="tab">Tài khoản ngân hàng</a>
+            </li>            
+          </ul>     
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="influencer-info" role="tabpanel">
+                <%- partial("partial/_influencer-info") %>
+            </div>
+            <div class="tab-pane fade" id="campaign-statistic" role="tabpanel">
+                <%- partial("partial/_influencer-contact") %>          
+            </div>
+            <div class="tab-pane fade" id="campaign-caption" role="tabpanel">
+              3
+            </div>
+            <div class="tab-pane fade" id="campaign-content" role="tabpanel">
+              4
+            </div>
+          </div>
+      
+
+
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow sticky-top">
+              <img class="card-img-top" src="img/3.jpg" alt="Card image cap">
+              <div class="card-body">              
+                <form>                  
+                    <div class="form-group">
+                      <label>Upload ảnh Avatar</label>
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile">Upload ảnh mới</label>
+                      </div>                      
+                    </div>                  
+                    <div class="text-right">
+                        <button class="btn btn-outline-primary">Thay Avatar</button>
+                    </div>
+                    
+                </form>
+              </div>
+            </div>
+          </div>
+
+   
+    </div>
+</div>
