@@ -34,13 +34,13 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link menu-link" href="#">Giới thiệu <span class="sr-only">(current)</span></a>
+          <a class="nav-link menu-link" href="/">Giới thiệu <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link menu-link" href="#">Chính sách & Quy định</a>
+          <a class="nav-link menu-link" href="/">Chính sách & Quy định</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link menu-link" href="#">Hỏi & Đáp</a>
+          <a class="nav-link menu-link" href="/">Hỏi & Đáp</a>
         </li>
       </ul>
       <ul class="list-inline my-2 my-md-0 mr-md-3">
@@ -99,7 +99,7 @@
 	<nav class="shadow-sm">
     <ol class="breadcrumb">
       <li class="breadcrumb-item" aria-current="page"><a class="breadcrumb-link" href="/">Dashboard</a></li>
-      <li class="breadcrumb-item" aria-current="page">Settings</li>      
+      <li class="breadcrumb-item" aria-current="page">Cấu hình</li>      
     </ol>
 </nav>
 <div class="alert alert-warning" role="alert">
@@ -152,24 +152,238 @@
     <div class="card-body">
     
         <form>
+
             <div class="form-group">
-                <label>Mật khẩu cũ</label>
-                <input type="password" class="form-control">
+                <label for="Type">Loại tài khoản</label>
+                    <div>
+
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="radioRegular" value="Regular" name="Type" checked="checked" class="custom-control-input">
+                            <label class="custom-control-label" for="radioRegular">
+                                Tài khoản thường
+
+
+                            <span data-toggle="tooltip" data-html="true" title="" data-original-title="Mô tả tài khoản thường"><i class="fa fa-question-circle"></i></span>
+
+                        </label>
+                    </div>
+                    <div class="ml-3 pl-5">
+
+                    </div>
+                </div>
+                    <div>
+
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="radioHotTeen" value="HotTeen" name="Type" class="custom-control-input">
+                            <label class="custom-control-label" for="radioHotTeen">
+                                Hot Teen
+
+
+                            <span data-toggle="tooltip" data-html="true" title="" data-original-title="Mô tả Hotteen"><i class="fa fa-question-circle"></i></span>
+
+                        </label>
+                    </div>
+                    <div class="ml-3 pl-5">
+
+                    </div>
+                </div>
+                    <div>
+
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="radioHotMom" value="HotMom" name="Type" class="custom-control-input">
+                            <label class="custom-control-label" for="radioHotMom">
+                                Hot Mom
+
+
+                            <span data-toggle="tooltip" data-html="true" title="" data-original-title="Mô tả Hotmom"><i class="fa fa-question-circle"></i></span>
+
+                        </label>
+                    </div>
+                    <div class="ml-3 pl-5">
+
+                            <div id="dataHotMom" class="d-none">
+
+                                <h6 class="mb-2">
+                                    Danh sách con cái
+                                </h6>
+                                <div class="mb-2">
+                                    <button v-on:click="createItem()" type="button" class="btn btn-primary btn-sm">
+                                        <span class="fal fa-plus"></span> Thêm con cái
+                                    </button>
+                                </div>
+                                <div class="d-flex mb-2" v-for="(item,idx) in childrens">
+
+                                    <div class="mr-auto form-inline">
+
+                                        <select class="form-control" v-bind:name="'HotMomData['+idx+'].Gender'" v-model="item.Gender">
+                                            <option value="1">Nam</option>
+                                            <option value="2">Nữ</option>
+                                        </select>
+
+                                        <input type="number" placeholder="Tuổi" class="form-control mx-sm-2" v-bind:name="'HotMomData['+idx+'].Age'" v-model="item.Age">
+                                        <select class="form-control" name="HotMomData.AgeType" v-bind:name="'HotMomData['+idx+'].AgeType'" v-model="item.AgeType">
+                                            <option value="1">Tháng</option>
+                                            <option value="2">Tuổi</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                    </div>
+                </div>
+                    <div>
+
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="radioHotFacebooker" value="HotFacebooker" name="Type" class="custom-control-input">
+                            <label class="custom-control-label" for="radioHotFacebooker">
+                                Hot Facebooker
+
+
+                            <span data-toggle="tooltip" data-html="true" title="" data-original-title="Mô tả Facebooker"><i class="fa fa-question-circle"></i></span>
+
+                        </label>
+                    </div>
+                    <div class="ml-3 pl-5">
+
+                    </div>
+                </div>
+                    <div>
+
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="radioKols" value="Kols" name="Type" class="custom-control-input">
+                            <label class="custom-control-label" for="radioKols">
+                                Kols
+
+
+                            <span data-toggle="tooltip" data-html="true" title="" data-original-title="Mô tả Kols"><i class="fa fa-question-circle"></i></span>
+
+                        </label>
+                    </div>
+                    <div class="ml-3 pl-5">
+
+                    </div>
+                </div>
+                <span class="field-validation-valid" data-valmsg-for="Type" data-valmsg-replace="true"></span>
             </div>
-            <div class="form-group">
-                <label>Mật khẩu mới</label>
-                <input type="password" class="form-control">
-            </div>
-            <div class="form-group">
-                <label>Nhắc lại mật khẩu</label>
-                <input type="password" class="form-control">
-            </div>                        
-            <div class="text-right">
-                <button class="btn btn-outline-primary">Thay đổi</button>
-            </div>
-        
-            
+
+
+                <div class="form-group">
+                    <input type="submit" value="Đồng ý" class="btn btn-outline-primary">
+                </div>
         </form>
+        <hr>
+        <h5 class="mb-3">Bạn sẽ nhận được khoản thu nhập khi tham gia chiến dịch của chúng tôi</h5>
+        <div class="row my-2">
+            <label class="col-md-4">Chia sẻ thông điệp, không cần viết caption</label>
+            <div class="col-md-6">
+
+                <input type="number" disabled="disabled" value="20000" class="form-control">
+
+
+
+            </div>
+            <div class="col-md-2">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input checkbox-ignorecampaigntype" id="switchShareContent" checked="checked" data-url="/Account/UpdateIgnoreCampaignTypes?type=ShareContent&amp;removed=True">
+                    <label class="custom-control-label" for="switchShareContent">Đồng ý</label>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row my-2">
+            <label class="col-md-4">Chia sẻ thông điệp, viết thêm caption</label>
+            <div class="col-md-6">
+
+                <input type="number" disabled="disabled" value="20000" class="form-control">
+
+
+
+            </div>
+            <div class="col-md-2">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input checkbox-ignorecampaigntype" id="switchShareContentWithCaption" checked="checked" data-url="/Account/UpdateIgnoreCampaignTypes?type=ShareContentWithCaption&amp;removed=True">
+                    <label class="custom-control-label" for="switchShareContentWithCaption">Đồng ý</label>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row my-2">
+            <label class="col-md-4">Thay hình Avatar</label>
+            <div class="col-md-6">
+
+                <input type="number" disabled="disabled" value="5000" class="form-control">
+
+
+
+            </div>
+            <div class="col-md-2">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input checkbox-ignorecampaigntype" id="switchChangeAvatar" checked="checked" data-url="/Account/UpdateIgnoreCampaignTypes?type=ChangeAvatar&amp;removed=True">
+                    <label class="custom-control-label" for="switchChangeAvatar">Đồng ý</label>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row my-2">
+            <label class="col-md-4">Tham gia sự kiện và check in</label>
+            <div class="col-md-6">
+
+                <input type="number" disabled="disabled" value="10000" class="form-control">
+
+
+
+            </div>
+            <div class="col-md-2">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input checkbox-ignorecampaigntype" id="switchPostComment" checked="checked" data-url="/Account/UpdateIgnoreCampaignTypes?type=PostComment&amp;removed=True">
+                    <label class="custom-control-label" for="switchPostComment">Đồng ý</label>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row my-2">
+            <label class="col-md-4">Share link livestream</label>
+            <div class="col-md-6">
+
+                <input type="number" disabled="disabled" value="10000" class="form-control">
+
+
+
+            </div>
+            <div class="col-md-2">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input checkbox-ignorecampaigntype" id="switchJoinEvent" checked="checked" data-url="/Account/UpdateIgnoreCampaignTypes?type=JoinEvent&amp;removed=True">
+                    <label class="custom-control-label" for="switchJoinEvent">Đồng ý</label>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row my-2">
+            <label class="col-md-4">Viết Review một sản phẩm hoặc tham gia trải nghiệm</label>
+            <div class="col-md-6">
+
+                <input type="number" disabled="disabled" value="5000" class="form-control">
+
+
+
+            </div>
+            <div class="col-md-2">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input checkbox-ignorecampaigntype" id="switchShareStreamUrl" checked="checked" data-url="/Account/UpdateIgnoreCampaignTypes?type=ShareStreamUrl&amp;removed=True">
+                    <label class="custom-control-label" for="switchShareStreamUrl">Đồng ý</label>
+                </div>
+
+
+            </div>
+        </div>
+
 
      
     </div>

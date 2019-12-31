@@ -22,5 +22,9 @@
 	"influencer-configuration":{
 		"pageTitle": "Configuration",
 		"layout": "_layout"
+	},
+	"signin":{
+		"pageTitle": "Signin",
+		"layout": "_layout-signin"
 	}
 }
