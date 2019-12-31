@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Notification | Booterator</title>
+	<title>Configuration | Booterator</title>
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  
   <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> v4.7--> 
@@ -99,143 +99,111 @@
 	<nav class="shadow-sm">
     <ol class="breadcrumb">
       <li class="breadcrumb-item" aria-current="page"><a class="breadcrumb-link" href="/">Dashboard</a></li>
-      <li class="breadcrumb-item" aria-current="page">Thông báo</li>      
+      <li class="breadcrumb-item" aria-current="page">Settings</li>      
     </ol>
 </nav>
+<div class="alert alert-warning" role="alert">
+  <i class="fas fa-info-circle"></i> Bạn đã thay đổi thông tin cá nhân thành công
+</div>
 <div class="container mt-4">
     <div class="row">
-        <div class="col-md-12">
-          <div class="card mb-3 shadow border-0">
-            <div class="card-body">                        
-                <div class="row">
-                    <div class="col-lg-12 col-sm-12">
-                        <form>
-                            <div class="form-group mb-2">
-                                <div class="form-row">
-                                    <div class="col-md-2">
-                                        <select class="custom-select custom-select-lg">
-                                                <option>Tất cả</option>
-                                                <option>Hệ thống</option>
-                                                <option>Chiến dịch</option>
-                                                <option>Thanh toán</option>                                                
-                                        </select>
-                                    </div>
-                                    <div class="col-md-8">
-                                            <input type="text" class="form-control form-control-lg" placeholder="Từ ngày ... đến ngày">
-                                    </div>
-                                    <div class="col-md-2">
-                                            <button type="submit" class="shadow btn btn-warning btn-lg">Tìm kiếm</button>
-                                    </div>
-                                </div>
-                                
-                            </div>                                                                        
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-8">
 
           <ul class="nav nav-tabs nav-campaign">
             <li class="nav-item">
-                <a class="nav-link active" id="notification-all-tab" data-toggle="tab" href="#notification-all" role="tab">Tất cả</a>
+              <a class="nav-link active" id="influencer-change-password-tab" data-toggle="tab" href="#influencer-change-password" role="tab">Thay đổi mật khẩu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="notification-system-tab" data-toggle="tab" href="#notification-system" role="tab">Hệ thống</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="notification-campaign-tab" data-toggle="tab" href="#notification-campaign" role="tab">Chiến dịch</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="notification-payment-tab" data-toggle="tab" href="#notification-payment" role="tab">Thanh toán</a>
-            </li>
-          </ul>    
-          <!--####################content#########################--> 
+              <a class="nav-link" id="influencer-register-kols-tab" data-toggle="tab" href="#influencer-register-kols" role="tab">Đăng ký Kols</a>
+            </li>                   
+          </ul>     
           <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="notification-all" role="tabpanel">
-                <ul class="list-unstyled mt-3">                    
-                    <li>
-                        <div class="card shadow border-0 mb-3">
-                            <div class="card-body">
-                              <div class="text-right">
-                                <small><i class="fas fa-clock"></i> Ngày 29-12-2020 10:16:36</small>
-                              </div>
-                              <span>
-                                Hệ thống cập nhật bạn không hoàn thành chiến dịch 111121901
-                              </span>
-                              <div class="text-right">
-                                <span class="badge badge-success">Hệ thống</span> 
-                              </div>
-                            </div>
-                          </div>
-                    </li>
-                    <li>
-                        <div class="card shadow border-0 mb-3">
-                            <div class="card-body">
-                              <div class="text-right">
-                                <small><i class="fas fa-clock"></i> 3 ngày trước</small>
-                              </div>
-                              <span>
-                                Hệ thống cập nhật bạn không hoàn thành chiến dịch 111121901
-                              </span>
-                              <div class="text-right">
-                                <span class="badge badge-primary">Chiến dịch</span> 
-                              </div>
-                            </div>
-                          </div>
-                    </li>
-                    <li>
-                        <div class="card shadow border-0 mb-3">
-                            <div class="card-body">
-                              <div class="text-right">
-                                <small><i class="fas fa-clock"></i> 12 ngày trước</small>
-                              </div>
-                              <span>
-                                Hệ thống cập nhật bạn không hoàn thành chiến dịch 111121901
-                              </span>
-                              <div class="text-right">
-                                <span class="badge badge-warning">Thanh toán</span> 
-                              </div>
-                            </div>
-                          </div>
-                    </li>
-                    <li>
-                        <nav class="mt-4">
-                            <ul class="pagination justify-content-end">
-                              <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Trang Trước</a>
-                              </li>
-                              <li class="page-item"><a class="page-link" href="#">1</a></li>
-                              <li class="page-item"><a class="page-link" href="#">2</a></li>
-                              <li class="page-item"><a class="page-link" href="#">3</a></li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">Trang Tiếp</a>
-                              </li>
-                            </ul>
-                          </nav>
-                    </li>                 
-                </ul>
+            <div class="tab-pane fade show active" id="influencer-change-password" role="tabpanel">
+                <div class="card mb-3 shadow border-0 mt-1">    
+    <div class="card-body">
+    
+        <form>
+            <div class="form-group">
+                <label>Mật khẩu cũ</label>
+                <input type="password" class="form-control">
             </div>
-            <div class="tab-pane fade" id="notification-system" role="tabpanel">
-              2
+            <div class="form-group">
+                <label>Mật khẩu mới</label>
+                <input type="password" class="form-control">
             </div>
-            <div class="tab-pane fade" id="notification-campaign" role="tabpanel">
-              3
-            </div>            
-            <div class="tab-pane fade" id="notification-payment" role="tabpanel">
-              4
-            </div>              
+            <div class="form-group">
+                <label>Nhắc lại mật khẩu</label>
+                <input type="password" class="form-control">
+            </div>                        
+            <div class="text-right">
+                <button class="btn btn-outline-primary">Thay đổi</button>
+            </div>
+        
+            
+        </form>
+
+     
+    </div>
+</div>
+
+            </div>
+            <div class="tab-pane fade" id="influencer-register-kols" role="tabpanel">
+                <div class="card mb-3 shadow border-0 mt-1">    
+    <div class="card-body">
+    
+        <form>
+            <div class="form-group">
+                <label>Mật khẩu cũ</label>
+                <input type="password" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Mật khẩu mới</label>
+                <input type="password" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Nhắc lại mật khẩu</label>
+                <input type="password" class="form-control">
+            </div>                        
+            <div class="text-right">
+                <button class="btn btn-outline-primary">Thay đổi</button>
+            </div>
+        
+            
+        </form>
+
+     
+    </div>
+</div>
+          
+            </div>
+         
           </div>
-          <!--###################################################-->
       
 
 
         </div>
+        <div class="col-md-4">
+            <div class="card shadow sticky-top">
+              <img class="card-img-top" src="img/3.jpg" alt="Card image cap">
+              <div class="card-body">              
+                <form>                  
+                    <div class="form-group">
+                      <label>Upload ảnh đại diện</label>
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile">Upload ảnh mới</label>
+                      </div>                      
+                    </div>                  
+                    <div class="text-right">
+                        <button class="btn btn-outline-primary">Thay ảnh đại diện</button>
+                    </div>
+                    
+                </form>
+              </div>
+            </div>
+          </div>
 
-      
+   
     </div>
 </div>
 

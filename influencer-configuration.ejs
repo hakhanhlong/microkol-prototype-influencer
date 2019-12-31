@@ -1,7 +1,7 @@
 <nav class="shadow-sm">
     <ol class="breadcrumb">
       <li class="breadcrumb-item" aria-current="page"><a class="breadcrumb-link" href="/">Dashboard</a></li>
-      <li class="breadcrumb-item" aria-current="page">Settings</li>      
+      <li class="breadcrumb-item" aria-current="page">Cấu hình</li>      
     </ol>
 </nav>
 <div class="alert alert-warning" role="alert">
@@ -13,31 +13,20 @@
 
           <ul class="nav nav-tabs nav-campaign">
             <li class="nav-item">
-              <a class="nav-link active" id="influencer-info-tab" data-toggle="tab" href="#influencer-info" role="tab">Thông tin cá nhân</a>
+              <a class="nav-link active" id="influencer-change-password-tab" data-toggle="tab" href="#influencer-change-password" role="tab">Thay đổi mật khẩu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="influencer-contact-tab" data-toggle="tab" href="#influencer-contact" role="tab">Thông tin liên lạc</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="influencer-identify-tab" data-toggle="tab" href="#influencer-identify" role="tab">Xác minh tài khoản</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="influencer-bank-tab" data-toggle="tab" href="#influencer-bank" role="tab">Tài khoản ngân hàng</a>
-            </li>            
+              <a class="nav-link" id="influencer-register-kols-tab" data-toggle="tab" href="#influencer-register-kols" role="tab">Đăng ký Kols</a>
+            </li>                   
           </ul>     
           <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="influencer-info" role="tabpanel">
-                <%- partial("partial/_influencer-info") %>
+            <div class="tab-pane fade show active" id="influencer-change-password" role="tabpanel">
+                <%- partial("partial/_influencer-change-password") %>
             </div>
-            <div class="tab-pane fade" id="influencer-contact" role="tabpanel">
-                <%- partial("partial/_influencer-contact") %>          
+            <div class="tab-pane fade" id="influencer-register-kols" role="tabpanel">
+                <%- partial("partial/_influencer-register-kols") %>          
             </div>
-            <div class="tab-pane fade" id="influencer-identify" role="tabpanel">
-              <%- partial("partial/_influencer-id-identify") %>
-            </div>
-            <div class="tab-pane fade" id="influencer-bank" role="tabpanel">
-              <%- partial("partial/_influencer-bank") %>
-            </div>
+         
           </div>
       
 

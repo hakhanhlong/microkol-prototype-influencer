@@ -18,5 +18,9 @@
 	"influencer-settings":{
 		"pageTitle": "Settings",
 		"layout": "_layout"
+	},
+	"influencer-configuration":{
+		"pageTitle": "Configuration",
+		"layout": "_layout"
 	}
 }

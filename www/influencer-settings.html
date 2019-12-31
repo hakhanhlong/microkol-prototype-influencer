@@ -84,7 +84,7 @@
         <a class="nav-link" href="/marketplace.html"><i class="fas fa-star"></i> MarketPlace</a>
       </li>      
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-cogs"></i> Cấu hình</a>
+        <a class="nav-link" href="/influencer-configuration.html"><i class="fas fa-cogs"></i> Cấu hình</a>
       </li>     
     </ul>
   </div>
@@ -114,13 +114,13 @@
               <a class="nav-link active" id="influencer-info-tab" data-toggle="tab" href="#influencer-info" role="tab">Thông tin cá nhân</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="campaign-statistic-tab" data-toggle="tab" href="#campaign-statistic" role="tab">Thông tin liên lạc</a>
+              <a class="nav-link" id="influencer-contact-tab" data-toggle="tab" href="#influencer-contact" role="tab">Thông tin liên lạc</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="campaign-caption-tab" data-toggle="tab" href="#campaign-caption" role="tab">Xác minh tài khoản</a>
+              <a class="nav-link" id="influencer-identify-tab" data-toggle="tab" href="#influencer-identify" role="tab">Xác minh tài khoản</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="campaign-content-tab" data-toggle="tab" href="#campaign-content" role="tab">Tài khoản ngân hàng</a>
+              <a class="nav-link" id="influencer-bank-tab" data-toggle="tab" href="#influencer-bank" role="tab">Tài khoản ngân hàng</a>
             </li>            
           </ul>     
           <div class="tab-content" id="myTabContent">
@@ -206,20 +206,245 @@
 </div>
 
             </div>
-            <div class="tab-pane fade" id="campaign-statistic" role="tabpanel">
+            <div class="tab-pane fade" id="influencer-contact" role="tabpanel">
                 <div class="card mb-3 shadow border-0 mt-1">    
     <div class="card-body">
     
         <form>
             <div class="form-group">
-                <label>Họ và tên</label>
-                <input type="text" class="form-control" value="Hà Khánh Long">
+                <label>Số điện thoại</label>
+                <input type="text" class="form-control">
             </div>
             <div class="form-group">
-                <label>Ngày sinh</label>
-                <input type="text" class="form-control" value="14/10/1984">
+                <label>Địa chỉ (Nơi bạn sinh sống)</label>
+                <input type="text" class="form-control">
             </div>
-                             
+            <div class="form-group">
+                <label>Tỉnh thành phố</label>
+                <select name="CityId" id="CityId" data-district="0" class="form-control valid" aria-invalid="false">
+                    <option value="1">Hà Nội</option>
+                    <option value="2">Hồ Chí Minh</option>
+                    <option value="11">Đắk Nông</option>
+                    <option value="12">Hải Phòng</option>
+                    <option value="13">Đà Nẵng</option>
+                    <option value="14">
+                        Cần Thơ
+                    </option>
+                    <option value="15">
+                        Bạc Liêu
+                    </option>
+                    <option value="16">
+                        Bắc Giang
+                    </option>
+                    <option value="17">
+                        Bắc Cạn
+                    </option>
+                    <option value="18">
+                        Bắc Ninh
+                    </option>
+                    <option value="19">
+                        Bến Tre
+                    </option>
+                    <option value="20">
+                        Bình Dương
+                    </option>
+                    <option value="21">
+                        Bình Định
+                    </option>
+                    <option value="22">
+                        Bình Phước
+                    </option>
+                    <option value="23">
+                        Bình Thuận
+                    </option>
+                    <option value="24">
+                        Cà Mau
+                    </option>
+                    <option value="25">
+                        Cao Bằng
+                    </option>
+                    <option value="26">
+                        Đắk Lắk
+                    </option>
+                    <option value="27">
+                        Đồng Nai
+                    </option>
+                    <option value="28">
+                        Đồng Tháp
+                    </option>
+                    <option value="29">
+                        Gia Lai
+                    </option>
+                    <option value="30">
+                        Hà Giang
+                    </option>
+                    <option value="31">
+                        Hà Nam
+                    </option>
+                    <option value="32">
+                        Hà Tây
+                    </option>
+                    <option value="33">
+                        Hà Tĩnh
+                    </option>
+                    <option value="34">
+                        Hải Dương
+                    </option>
+                    <option value="35">
+                        Hòa Bình
+                    </option>
+                    <option value="36">
+                        Hưng Yên
+                    </option>
+                    <option value="37">
+                        Khánh Hòa
+                    </option>
+                    <option value="38">
+                        Kiên Giang
+                    </option>
+                    <option value="39">
+                        Kon Tum
+                    </option>
+                    <option value="40">
+                        Lai Châu
+                    </option>
+                    <option value="41">
+                        Lạng Sơn
+                    </option>
+                    <option value="42">
+                        Lào Cai
+                    </option>
+                    <option value="43">
+                        Lâm Đồng
+                    </option>
+                    <option value="44">
+                        Long An
+                    </option>
+                    <option value="45">
+                        Nam Định
+                    </option>
+                    <option value="46">
+                        Nghệ An
+                    </option>
+                    <option value="47">
+                        Ninh Bình
+                    </option>
+                    <option value="48">
+                        Ninh Thuận
+                    </option>
+                    <option value="49">
+                        Phú Thọ
+                    </option>
+                    <option value="50">
+                        Phú Yên
+                    </option>
+                    <option value="51">
+                        Quảng Bình
+                    </option>
+                    <option value="52">
+                        Quảng Nam
+                    </option>
+                    <option value="53">
+                        Quảng Ngãi
+                    </option>
+                    <option value="54">
+                        Quảng Ninh
+                    </option>
+                    <option value="55">
+                        Quảng Trị
+                    </option>
+                    <option value="56">
+                        Sóc Trăng
+                    </option>
+                    <option value="57">
+                        Sơn La
+                    </option>
+                    <option value="58">
+                        Tây Ninh
+                    </option>
+                    <option value="59">
+                        Thái Bình
+                    </option>
+                    <option value="60">
+                        Thái Nguyên
+                    </option>
+                    <option value="61">
+                        Thanh Hóa
+                    </option>
+                    <option value="62">
+                        Thừa Thiên Huế
+                    </option>
+                    <option value="63">
+                        Tiền Giang
+                    </option>
+                    <option value="64">
+                        Trà Vinh
+                    </option>
+                    <option value="65">
+                        Tuyên Quang
+                    </option>
+                    <option value="66">
+                        Vĩnh Long
+                    </option>
+                    <option value="67">
+                        Vĩnh Phúc
+                    </option>
+                    <option value="68">
+                        Yên Bái
+                    </option>
+                    <option value="69">
+                        An giang
+                    </option>
+                    <option value="70">
+                        Bà Rịa - Vũng Tàu
+                    </option>
+                    <option value="71">
+                        Hậu Giang
+                    </option>
+                    <option value="72">
+                        Điện Biên
+                    </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Quận huyện</label>
+                <select name="DistrictId" id="DistrictId" class="form-control valid" aria-invalid="false">
+                    <option value="1">Q. Ba Đình</option>
+                    <option value="2">Q.Cầu Giấy</option>
+                    <option value="3">Q.Đống Đa</option>
+                    <option value="4">Q.Hà Đông</option>
+                    <option value="5">Q.Hai Bà Trưng</option>
+                    <option value="6">Q.Hoàn Kiếm</option>
+                    <option value="7">Q.Hoàng Mai</option>
+                    <option value="8">Q.Long Biên</option>
+                    <option value="9">Q.Tây Hồ</option>
+                    <option value="10">Q.Thanh Xuân</option>
+                    <option value="11">TX.Sơn Tây</option>
+                    <option value="12">H.Ba Vì</option>
+                    <option value="13">H.Chương Mỹ</option>
+                    <option value="14">H.Đan Phượng</option>
+                    <option value="15">H.Đông Anh</option>
+                    <option value="16">H.Gia Lâm</option>
+                    <option value="17">H.Mê Linh</option>
+                    <option value="18">H.Mỹ Đức</option>
+                    <option value="19">H.Phú Xuyên</option>
+                    <option value="20">H.Phúc Thọ</option>
+                    <option value="21">H.Quốc Oai</option>
+                    <option value="22">H.Sóc Sơn</option>
+                    <option value="23">H.Thạch Thất</option>
+                    <option value="24">H.Thanh Oai</option>
+                    <option value="25">H.Thanh Trì</option>
+                    <option value="26">H.Thường Tín</option>
+                    <option value="27">H.Từ Liêm</option>
+                    <option value="28">H.Ứng Hòa</option>
+                    <option value="29">Hoài Đức</option>
+                    <option value="1000">Không xác định</option>
+                </select>
+            </div>
+            <p class="small text-danger">
+                * Bạn cẩn đảm bảo thông tin mình khai báo là chính xác. Hệ thống sẽ dựa vào thông tin bạn khai báo để gửi thông báo cũng như thanh toán cho các chiến dịch mà bạn thực hiện.
+                Nếu khai báo sai bạn có thể không nhận được thanh toán hoặc thông báo chiến dịch mới. Chúng tôi không chịu trách nhiệm nếu sự cố do bạn khai báo 
+            </p>                
             <div class="text-right">
                 <button class="btn btn-outline-primary">Thay đổi</button>
             </div>
@@ -232,11 +457,99 @@
 </div>
           
             </div>
-            <div class="tab-pane fade" id="campaign-caption" role="tabpanel">
-              3
+            <div class="tab-pane fade" id="influencer-identify" role="tabpanel">
+              <div class="card mb-3 shadow border-0 mt-1">    
+    <div class="card-body">
+    
+        <form>
+            <div class="form-group">
+                <label>Họ tên</label>
+                <input type="text" class="form-control">
             </div>
-            <div class="tab-pane fade" id="campaign-content" role="tabpanel">
-              4
+            <div class="form-group">
+                <label>Số CMND</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Ngày cấp</label>
+                <input type="text" class="form-control" value="08/01/2009">
+                
+            </div>
+            <div class="form-group">
+                <label>Nơi cấp</label>
+                <input type="text" class="form-control" value="Hà Nội">                
+            </div>
+            <div class="form-group">
+                <label>Upload mặt trước</label>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFile">
+                  <label class="custom-file-label" for="customFile">Upload ảnh</label>
+                </div>                      
+              </div>  
+              <div class="form-group">
+                <label>Upload mặt sau</label>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFile">
+                  <label class="custom-file-label" for="customFile">Upload ảnh</label>
+                </div>                      
+              </div>  
+                        
+            <div class="text-right">
+                <button class="btn btn-outline-primary">Thay đổi</button>
+            </div>
+        
+            
+        </form>
+
+     
+    </div>
+</div>
+
+            </div>
+            <div class="tab-pane fade" id="influencer-bank" role="tabpanel">
+              <div class="card mb-3 shadow border-0 mt-1">    
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tài khoản</th>
+                <th scope="col">Số tài khoản</th>
+                <th scope="col">Ngân hàng</th>
+                <th scope="col">Chi nhánh</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry the Bird</td>
+                <td>@twitter</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+            </tbody>
+          </table>
+        <div class="text-right">
+            <button class="btn btn-outline-primary" data-toggle="modal" data-target="#modal-influencer-add-bank">Thêm tài khoản</button>
+        </div>            
+    </div>
+</div>
+
+
             </div>
           </div>
       
@@ -249,14 +562,14 @@
               <div class="card-body">              
                 <form>                  
                     <div class="form-group">
-                      <label>Upload ảnh Avatar</label>
+                      <label>Upload ảnh đại diện</label>
                       <div class="custom-file">
                         <input type="file" class="custom-file-input" id="customFile">
                         <label class="custom-file-label" for="customFile">Upload ảnh mới</label>
                       </div>                      
                     </div>                  
                     <div class="text-right">
-                        <button class="btn btn-outline-primary">Thay Avatar</button>
+                        <button class="btn btn-outline-primary">Thay ảnh đại diện</button>
                     </div>
                     
                 </form>
@@ -404,6 +717,50 @@
                 <div class="text-right">
                     <button class="btn btn-outline-primary">Cập nhật công việc</button>
                 </div>
+                
+            </form>
+
+            <!--#################################-->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>          
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" style="z-index: 999999;" id="modal-influencer-add-bank" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Thêm tài khoản ngân hàng</h5>          
+        </div>
+        <div class="modal-body">                    
+            <!--#################################-->
+          
+            <form>
+                <div class="form-group">
+                    <label>Tên tài khoản</label>
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label>Số tài khoản</label>
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label>Ngân hàng</label>
+                    <input type="text" class="form-control" value="Techcom bank"/>
+                    
+                </div>
+                <div class="form-group">
+                    <label>Chi nhánh</label>
+                    <input type="text" class="form-control" value="Hà Nội"/>                
+                </div>                                          
+                <div class="text-right">
+                    <button class="btn btn-outline-primary">Thêm mới</button>
+                </div>
+            
                 
             </form>
 
