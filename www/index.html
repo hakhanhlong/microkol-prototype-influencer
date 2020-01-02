@@ -148,9 +148,19 @@
       $('[data-toggle="tooltip"]').tooltip();
       // initalize popovers
       $('[data-toggle="popover"]').popover();
-    });
 
-    $('#btn-campaign-apply').click(function(){        
+
+
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("myRangeValue");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      };
+
+
+      $('#btn-campaign-apply').click(function(){        
           bootbox.alert({
               size: "small",
               title: "Thông báo",
@@ -161,6 +171,13 @@
           });
     });
 
+
+
+
+
+    });
+
+  
   </script>
 
 
@@ -186,6 +203,40 @@
                 </div>
                 <div class="text-right">
                     <button class="btn btn-outline-primary">Gửi</button>
+                </div>
+                
+            </form>
+
+            <!--#################################-->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>          
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal -->
+<div class="modal fade" style="z-index: 999999;" id="modal-campaign-apply-caption" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tham gia chiến dịch</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">                    
+            <!--#################################-->
+            <div class="alert alert-success" role="alert">
+                <i class="fas fa-info-circle"></i> Đã gửi caption thành công, caption của bạn đang chờ được xét duyệt.
+              </div>
+            <form>
+                <div class="form-group">
+                    <label>Nội dung caption bạn muốn chia sẻ</label>
+                    <textarea class="form-control" rows="2"></textarea>
+                </div>
+                <div class="text-right">
+                    <button class="btn btn-outline-primary">Gửi và Tham gia chiến dịch</button>
                 </div>
                 
             </form>

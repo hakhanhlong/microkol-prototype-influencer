@@ -39,9 +39,19 @@
       $('[data-toggle="tooltip"]').tooltip();
       // initalize popovers
       $('[data-toggle="popover"]').popover();
-    });
 
-    $('#btn-campaign-apply').click(function(){        
+
+
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("myRangeValue");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      };
+
+
+      $('#btn-campaign-apply').click(function(){        
           bootbox.alert({
               size: "small",
               title: "Thông báo",
@@ -52,10 +62,18 @@
           });
     });
 
+
+
+
+
+    });
+
+  
   </script>
 
 
 <%- partial("partial/_modal-campaign-form-caption") %>
+<%- partial("partial/_modal-campaign-apply-caption") %>
 <%- partial("partial/_modal-campaign-form-content") %>
 <%- partial("partial/_modal-campaign-update-work") %>
 
