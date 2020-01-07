@@ -26,5 +26,17 @@
 	"signin":{
 		"pageTitle": "Signin",
 		"layout": "_layout-signin"
+	},
+	"signin-1":{
+		"pageTitle": "Liên kết tài khoản Facebook",
+		"layout": "_layout-signin"
+	},
+	"signin-2":{
+		"pageTitle": "Thông tin cá nhân",
+		"layout": "_layout-signin"
+	},
+	"signin-3":{
+		"pageTitle": "Thông tin liên lạc",
+		"layout": "_layout-signin"
 	}
 }
